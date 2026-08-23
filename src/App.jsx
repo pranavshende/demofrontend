@@ -18,6 +18,7 @@ import GallerySection from './components/home/GallerySection';
 import SponsorsSection from './components/home/SponsorsSection';
 import VenueSection from './components/home/VenueSection';
 import ContactSection from './components/home/ContactSection';
+import BottomNav from './components/layout/BottomNav';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
       </main>
 
       <Footer />
+      <BottomNav />
     </div>
   );
 }

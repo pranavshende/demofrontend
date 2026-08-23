@@ -1,7 +1,14 @@
 import React from 'react';
 import SectionHeader from '../ui/SectionHeader';
-import { sponsors } from '../../data/mockData';
 import './SponsorsSection.css';
+
+const mockSponsors = [
+  { id: 1, name: 'Title Sponsor' },
+  { id: 2, name: 'Gold Sponsor' },
+  { id: 3, name: 'Silver Sponsor' },
+  { id: 4, name: 'Community Partner' },
+  { id: 5, name: 'Media Partner' }
+];
 
 const SponsorsSection = () => {
   return (
@@ -9,16 +16,15 @@ const SponsorsSection = () => {
       <div className="container">
         <SectionHeader 
           title="OUR SPONSORS & PARTNERS" 
-          subtitle="SUPPORTED BY"
         />
         
         <div className="sponsors-grid">
-          {sponsors.map((sponsor) => (
+          {mockSponsors.map((sponsor) => (
             <div key={sponsor.id} className="sponsor-card">
-              <span className="sponsor-tier">{sponsor.name}</span>
-              <div className="sponsor-logo-box">
-                {sponsor.logo}
+              <div className="sponsor-logo-circle">
+                <span className="sponsor-icon">❖</span>
               </div>
+              <span className="sponsor-tier">{sponsor.name}</span>
             </div>
           ))}
         </div>

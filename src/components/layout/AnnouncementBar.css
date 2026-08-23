@@ -36,7 +36,9 @@
 
 @media (max-width: 768px) {
   .announcement-content {
+    flex-direction: column;
     justify-content: center;
+    gap: 0.25rem;
   }
   .announcement-link {
     display: none;
@@ -44,5 +46,6 @@
   .announcement-text {
     text-align: center;
     font-size: 0.75rem;
+    line-height: 1.2;
   }
 }

@@ -63,6 +63,10 @@ img {
     font-size: 12px; /* Scales everything down further on mobile */
   }
   
+  .container {
+    padding: 0 1rem;
+  }
+  
   .section-padding {
     padding: 3rem 0;
   }

@@ -7,6 +7,7 @@ const VotingSection = () => {
   return (
     <section className="voting-section section-padding">
       <div className="container">
+        
         <div className="voting-container">
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
@@ -14,8 +15,12 @@ const VotingSection = () => {
             viewport={{ once: true }}
             className="voting-content"
           >
-            <h2 className="voting-title">PUBLIC VOTING</h2>
-            <p className="voting-desc">Support your favorite performer. Your vote can make them the winner!</p>
+            <div className="voting-header-row">
+              <span className="decorative-icon">❖</span>
+              <h2 className="voting-title">PUBLIC VOTING</h2>
+            </div>
+            
+            <p className="voting-desc">Support your favorite performer.<br/>Your vote can make them the winner!</p>
             
             <div className="voting-stats">
               <div className="vote-stat">
@@ -32,7 +37,7 @@ const VotingSection = () => {
               </div>
             </div>
             
-            <Button variant="primary" size="lg">VOTE NOW</Button>
+            <Button variant="primary" className="voting-btn w-full">VOTE NOW</Button>
           </motion.div>
           
           <motion.div 
@@ -41,10 +46,12 @@ const VotingSection = () => {
             viewport={{ once: true }}
             className="voting-illustration"
           >
-            <div className="ballot-box">
-              <div className="ballot-slot"></div>
-              <div className="ballot-paper">VOTE</div>
-              <div className="ballot-body">VOTE</div>
+            <div className="ballot-box-container">
+              <div className="ballot-box">
+                <div className="ballot-slot"></div>
+                <div className="ballot-paper"></div>
+                <div className="ballot-body">VOTE</div>
+              </div>
             </div>
           </motion.div>
         </div>

@@ -1,45 +1,57 @@
 .sponsors-section {
-  background-color: var(--color-white);
+  background-color: var(--color-cream-light);
 }
 
 .sponsors-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
+  justify-content: flex-start;
+  gap: 1.5rem;
 }
 
 .sponsor-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background-color: var(--color-white);
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: calc(33.333% - 1rem);
+  min-width: 140px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
 }
 
-.sponsor-tier {
-  font-size: 0.75rem;
-  color: var(--color-saffron-dark);
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 0.75rem;
-  letter-spacing: 1px;
-}
-
-.sponsor-logo-box {
-  width: 180px;
-  height: 100px;
-  border: 1px solid var(--color-gray-200);
-  border-radius: var(--border-radius-sm);
+.sponsor-logo-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--color-gray-100);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-secondary);
-  font-weight: 600;
-  background-color: var(--color-gray-100);
-  transition: var(--transition-normal);
+  margin-bottom: 1rem;
+  color: var(--color-gray-200);
 }
 
-.sponsor-logo-box:hover {
-  border-color: var(--color-saffron);
-  box-shadow: var(--shadow-sm);
-  background-color: var(--color-white);
+.sponsor-icon {
+  font-size: 1.5rem;
+}
+
+.sponsor-tier {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .sponsors-grid {
+    gap: 1rem;
+  }
+  .sponsor-card {
+    width: calc(50% - 0.5rem);
+    padding: 1rem;
+  }
 }

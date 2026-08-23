@@ -8,8 +8,9 @@ const GallerySection = () => {
     <section className="gallery-section section-padding" id="gallery">
       <div className="container">
         <SectionHeader 
-          title="MAHOTSAV GALLERY" 
-          subtitle="MEMORIES"
+          title="GALLERY" 
+          hideIcon={true}
+          viewAllLink="#"
         />
         
         <div className="gallery-scroll-container">
@@ -17,11 +18,14 @@ const GallerySection = () => {
             {galleryImages.map((img) => (
               <div key={img.id} className="gallery-item">
                 <img src={img.src} alt={img.category} loading="lazy" />
-                <div className="gallery-item-overlay">
-                  <span>{img.category}</span>
-                </div>
               </div>
             ))}
+          </div>
+          
+          <div className="gallery-dots">
+            <span className="dot active"></span>
+            <span className="dot"></span>
+            <span className="dot"></span>
           </div>
         </div>
       </div>

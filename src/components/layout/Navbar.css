@@ -74,7 +74,7 @@
 }
 
 .mobile-menu-btn {
-  color: var(--color-white);
+  display: none !important;
 }
 
 .mobile-menu {
@@ -111,5 +111,15 @@
   }
   .mobile-only {
     display: block;
+  }
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .logo-text h2 {
+    font-size: 0.875rem;
+  }
+  .logo-text p {
+    font-size: 0.55rem;
   }
 }

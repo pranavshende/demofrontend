@@ -10,7 +10,7 @@ const ArtistsSection = () => {
       <div className="container">
         <SectionHeader 
           title="FEATURED ARTISTS" 
-          subtitle="PERFORMERS"
+          viewAllLink="#"
         />
         
         <div className="artists-grid">
@@ -26,7 +26,7 @@ const ArtistsSection = () => {
               <div className="artist-img-wrapper">
                 <img src={artist.image} alt={artist.name} className="artist-img" />
               </div>
-              <h3 className="artist-name">{artist.name}</h3>
+              <h3 className="artist-name">Artist Name</h3>
               <p className="artist-profession">{artist.profession}</p>
             </motion.div>
           ))}

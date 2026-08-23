@@ -1,90 +1,62 @@
 .contact-section {
-  background-color: var(--color-cream);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://www.transparenttextures.com/patterns/cream-paper.png');
+  background-color: var(--color-cream-light);
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 4rem;
+.contact-layout {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
-.contact-form-container {
-  background-color: var(--color-white);
-  padding: 3rem;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-md);
-  border-top: 5px solid var(--color-maroon);
-}
-
-.contact-form {
+.contact-info-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
+  z-index: 2;
 }
 
-.form-group input, .form-group textarea {
-  width: 100%;
-  padding: 1rem 1.5rem;
-  border: 1px solid var(--color-gray-200);
-  border-radius: var(--border-radius-sm);
-  font-family: inherit;
-  font-size: 1rem;
-  background-color: var(--bg-primary);
-  transition: var(--transition-normal);
-}
-
-.form-group input:focus, .form-group textarea:focus {
-  outline: none;
-  border-color: var(--color-saffron);
-  box-shadow: 0 0 0 3px rgba(255, 153, 51, 0.2);
-}
-
-.contact-details-container {
+.contact-item {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-maroon-dark);
 }
 
-.contact-info-card {
-  background-color: var(--color-maroon-dark);
-  color: var(--color-white);
-  padding: 3rem;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-md);
-}
-
-.contact-info-card h3 {
-  font-size: 1.5rem;
+.contact-icon {
   color: var(--color-saffron);
-  margin-bottom: 2rem;
 }
 
-.contact-info-card ul {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.contact-illustration-wrapper {
+  position: absolute;
+  right: -2rem;
+  bottom: -2rem;
+  z-index: 1;
+  opacity: 0.8;
 }
 
-.contact-info-card li {
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.contact-info-card li strong {
-  color: var(--color-gray-200);
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.temple-illustration {
+  width: 250px;
+  height: 200px;
+  background-image: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=400&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  -webkit-mask-image: radial-gradient(circle, black 30%, transparent 70%);
+  mask-image: radial-gradient(circle, black 30%, transparent 70%);
 }
 
 @media (max-width: 768px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
+  .contact-layout {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .contact-form-container, .contact-info-card {
-    padding: 2rem;
+  .contact-illustration-wrapper {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin-top: 1rem;
+    align-self: center;
   }
 }
