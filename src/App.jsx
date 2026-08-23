@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import AnnouncementBar from './components/layout/AnnouncementBar';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
@@ -22,6 +22,7 @@ import BottomNav from './components/layout/BottomNav';
 
 function App() {
   return (
+    <>
     <div className="app-wrapper">
       <header className="site-header">
         <AnnouncementBar />
@@ -47,8 +48,9 @@ function App() {
       </main>
 
       <Footer />
-      <BottomNav />
     </div>
+    <BottomNav />
+    </>
   );
 }
 
