@@ -3,7 +3,7 @@
   transition: var(--transition-normal);
   background: transparent;
   padding: 1.5rem 0;
-  color: var(--color-maroon-dark);
+  color: var(--color-white);
 }
 
 .navbar.navbar-scrolled {
@@ -29,6 +29,10 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  color: var(--color-white);
+}
+
+.navbar.navbar-scrolled .navbar-logo {
   color: var(--color-maroon-dark);
 }
 
@@ -49,8 +53,12 @@
 .logo-text p {
   font-size: 0.65rem;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: var(--color-gray-100);
   letter-spacing: 0.5px;
+}
+
+.navbar.navbar-scrolled .logo-text p {
+  color: var(--text-secondary);
 }
 
 .navbar-links {
@@ -113,6 +121,10 @@
   }
   .mobile-only {
     display: block;
+  }
+  .mobile-menu-btn {
+    display: block !important;
+    color: inherit;
   }
   .logo-icon {
     width: 32px;
