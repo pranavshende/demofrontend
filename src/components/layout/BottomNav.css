@@ -7,7 +7,7 @@
   height: 65px;
   background: var(--color-maroon-dark) !important;
   background-color: var(--color-maroon-dark) !important;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   padding: 0 0.5rem;
@@ -24,6 +24,13 @@
   flex: 1;
   color: var(--color-gray-200);
   gap: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, color 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bottom-nav-item:active {
+  opacity: 0.7;
 }
 
 .bottom-nav-item.active {
@@ -45,11 +52,12 @@
 
 .center-fab {
   position: absolute;
-  top: -18px; /* Overlaps top of the bottom nav */
+  top: -60px; /* Overlaps more than half */
   left: 50%;
   transform: translateX(-50%);
   width: 65px;
   height: 65px;
+  flex-shrink: 0;
   background: linear-gradient(135deg, var(--color-saffron), #d43825);
   border-radius: 50%;
   display: flex;
@@ -60,6 +68,13 @@
   border: 3px solid var(--color-white);
   box-shadow: 0 4px 15px rgba(229, 62, 62, 0.4);
   z-index: 1000;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.center-fab:active {
+  transform: translateX(-50%) scale(0.95);
 }
 
 .fab-icon {
