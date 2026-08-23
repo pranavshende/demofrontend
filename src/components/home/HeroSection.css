@@ -3,22 +3,14 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=2000&auto=format&fit=crop');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: var(--color-white);
-  padding-top: 100px; /* space for navbar */
+  background-color: var(--color-cream-light);
+  /* Removed dark image to match new cultural theme */
+  color: var(--text-primary);
+  padding-top: 100px;
 }
 
 .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(10, 10, 10, 0.9) 0%, rgba(10, 10, 10, 0.6) 50%, rgba(10, 10, 10, 0.2) 100%);
-  z-index: 1;
+  display: none;
 }
 
 .hero-content {
@@ -37,31 +29,31 @@
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: var(--color-maroon-dark);
 }
 
 .hero-title span {
   font-size: 3rem;
-  color: var(--color-cream);
+  color: var(--text-primary);
 }
 
 .hero-subtitle {
-  color: var(--color-saffron);
+  color: var(--color-saffron-dark);
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .hero-tagline {
   font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: var(--text-primary);
 }
 
 .hero-description {
   font-size: 1.25rem;
-  color: var(--color-gray-200);
+  color: var(--text-secondary);
   margin-bottom: 2.5rem;
   max-width: 600px;
   line-height: 1.6;
