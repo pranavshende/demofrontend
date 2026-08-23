@@ -5,32 +5,32 @@ import './BottomNav.css';
 const BottomNav = () => {
   return (
     <nav className="bottom-nav mobile-only">
-      <div className="bottom-nav-item">
+      <a href="#" className="bottom-nav-item">
         <Home size={22} />
         <span>Home</span>
-      </div>
+      </a>
       
-      <div className="bottom-nav-item">
+      <a href="#events" className="bottom-nav-item">
         <Calendar size={22} />
         <span>Events</span>
-      </div>
+      </a>
       
       <div className="bottom-nav-center-item">
-        <div className="center-fab">
+        <a href="#competitions" className="center-fab">
           <span className="fab-icon">📋</span>
           <span className="fab-text">Register<br/>Now</span>
-        </div>
+        </a>
       </div>
       
-      <div className="bottom-nav-item">
+      <a href="#winners" className="bottom-nav-item">
         <Trophy size={22} />
         <span>Results</span>
-      </div>
+      </a>
       
-      <div className="bottom-nav-item">
+      <a href="#contact" className="bottom-nav-item">
         <Menu size={22} />
-        <span>Menu</span>
-      </div>
+        <span>Contact</span>
+      </a>
     </nav>
   );
 };

@@ -17,14 +17,12 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', href: '#' },
-    { name: 'About Mahotsav', href: '#about' },
+    { name: 'About', href: '#about' },
     { name: 'Events', href: '#events' },
     { name: 'Competitions', href: '#competitions' },
     { name: 'Schedule', href: '#schedule' },
     { name: 'Artists', href: '#artists' },
     { name: 'Gallery', href: '#gallery' },
-    { name: 'Top Performances', href: '#performances' },
-    { name: 'Winners', href: '#winners' },
     { name: 'Contact', href: '#contact' },
   ];
 

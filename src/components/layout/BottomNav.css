@@ -27,6 +27,7 @@
   cursor: pointer;
   transition: opacity 0.2s ease, color 0.2s ease;
   -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
 }
 
 .bottom-nav-item:active {
@@ -71,6 +72,7 @@
   cursor: pointer;
   transition: transform 0.2s ease;
   -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
 }
 
 .center-fab:active {

@@ -44,14 +44,14 @@
 }
 
 .logo-text h2 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: 0.5px;
 }
 
 .logo-text p {
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   font-weight: 500;
   color: var(--color-gray-100);
   letter-spacing: 0.5px;
@@ -63,16 +63,18 @@
 
 .navbar-links {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
 .nav-link {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   position: relative;
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-link:hover, .nav-link.active {
