@@ -1,0 +1,96 @@
+.performances-section {
+  background-color: var(--bg-primary);
+}
+
+.demo-notice {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.demo-badge {
+  background-color: var(--color-maroon);
+  color: var(--color-white);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.performances-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.performance-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.perf-thumbnail {
+  position: relative;
+  height: 200px;
+  cursor: pointer;
+}
+
+.perf-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--color-maroon);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  transition: transform 0.2s ease;
+}
+
+.perf-thumbnail:hover .play-btn {
+  transform: translate(-50%, -50%) scale(1.1);
+  background-color: var(--color-saffron);
+  color: var(--color-white);
+}
+
+.perf-info {
+  padding: 1.5rem;
+}
+
+.perf-info h4 {
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.perf-info p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+/* Button overrides for dark variant since it uses secondary */
+.perf-info .btn-secondary {
+  border-color: var(--color-maroon);
+  color: var(--color-maroon);
+}
+
+.perf-info .btn-secondary:hover {
+  background-color: var(--color-maroon);
+  color: var(--color-white);
+}

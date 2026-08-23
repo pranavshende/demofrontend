@@ -1,0 +1,44 @@
+.section-header {
+  margin-bottom: 3rem;
+}
+
+.align-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.align-left {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section-subtitle {
+  color: var(--color-saffron);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  color: var(--text-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-title.light {
+  color: var(--color-white);
+}
+
+.section-divider {
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-maroon);
+  border-radius: 2px;
+}

@@ -1,0 +1,50 @@
+:root {
+  /* Core Colors */
+  --color-saffron: #FF9933;
+  --color-saffron-dark: #e68a2e;
+  --color-maroon: #6c121e;
+  --color-maroon-dark: #4a0c14;
+  --color-royal-blue: #002366;
+  --color-cream: #FFFDD0;
+  --color-cream-light: #FFFEF0;
+  --color-gold: #FFD700;
+  --color-dark-brown: #3E2723;
+  --color-white: #FFFFFF;
+  --color-black: #111111;
+  --color-gray-100: #F3F4F6;
+  --color-gray-200: #E5E7EB;
+  --color-gray-800: #1F2937;
+  
+  /* Backgrounds */
+  --bg-primary: var(--color-cream-light);
+  --bg-secondary: var(--color-white);
+  --bg-dark: var(--color-maroon);
+  --bg-darker: var(--color-maroon-dark);
+  --bg-card: var(--color-white);
+  
+  /* Text */
+  --text-primary: var(--color-dark-brown);
+  --text-secondary: var(--color-gray-800);
+  --text-light: var(--color-white);
+  --text-muted: var(--color-gray-100);
+  
+  /* Borders */
+  --border-color: rgba(62, 39, 35, 0.1);
+  --border-radius-sm: 6px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 24px;
+  --border-radius-full: 9999px;
+  
+  /* Typography */
+  --font-primary: 'Outfit', sans-serif;
+  --font-marathi: 'Yantramanav', sans-serif;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.12);
+  --shadow-gold: 0 4px 14px 0 rgba(255, 215, 0, 0.3);
+  
+  /* Transitions */
+  --transition-normal: all 0.3s ease;
+}

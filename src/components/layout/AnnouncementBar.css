@@ -1,0 +1,48 @@
+.announcement-bar {
+  background-color: var(--color-maroon-dark);
+  color: var(--color-white);
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  z-index: 50;
+  position: relative;
+}
+
+.announcement-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.announcement-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.announcement-icon {
+  color: var(--color-saffron);
+}
+
+.announcement-link {
+  color: var(--color-gray-200);
+  font-size: 0.75rem;
+  text-decoration: underline;
+  transition: var(--transition-normal);
+}
+
+.announcement-link:hover {
+  color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+  .announcement-content {
+    justify-content: center;
+  }
+  .announcement-link {
+    display: none;
+  }
+  .announcement-text {
+    text-align: center;
+    font-size: 0.75rem;
+  }
+}
